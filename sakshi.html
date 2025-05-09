@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Management</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #005580;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #f0f8ff;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #003366;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #333;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 24px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e65c00;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 300px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      color: #005580;
+    }
+
+    .contact {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+    }
+
+    .footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Star Events</h1>
+    <p>Your Dream, Our Mission</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Make Every Moment Unforgettable</h1>
+    <p>We manage everything from weddings to corporate events with precision, style, and creativity.</p>
+    <button class="btn" onclick="alert('Booking feature coming soon!')">Book Now</button>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>We are an award-winning event management company with over 10 years of experience in creating memorable experiences.</p>
+  </div>
+
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Wedding Planning</h3>
+        <p>Elegant themes, catering, décor, and more to make your special day magical.</p>
+      </div>
+      <div class="card">
+        <h3>Corporate Events</h3>
+        <p>Professional event planning for conferences, launches, and team-building.</p>
+      </div>
+      <div class="card">
+        <h3>Birthday Parties</h3>
+        <p>Fun-filled and customized themes to celebrate your special day.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required style="background-color: #fff;">
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit" onclick="alert('Thank you for reaching out!')">Send Message</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Star Events. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
